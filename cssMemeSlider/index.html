@@ -3,17 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="sass/style.css">
   <title>cssMemeSlider</title>
 </head>
 <body>
-  <h1>cssMemeSlider</h1>
-  <img src="images/1.jpg" alt="">
-  <img src="images/2.jpg" alt="">
-  <img src="images/3.jpg" alt="">
-  <img src="images/4.jpg" alt="">
-  <img src="images/5.jpg" alt="">
-  <img src="images/6.png" alt="">
-  <img src="images/7.gif" alt=""> 
+  <div class="slider end">
+    <div class="slides">  
+      <input type="radio" name="meme" id="r1" checked>
+      <input type="radio" name="meme" id="r2">
+      <input type="radio" name="meme" id="r3">
+      <input type="radio" name="meme" id="r4">
+      <input type="radio" name="meme" id="r5">
+      <input type="radio" name="meme" id="r6">
+
+      <div class="slide s1">
+        <img src="images/1.jpg" alt="meme1" class="img">
+        <h2>I just wanted to eat cake!</h2>
+      </div>
+      <div class="slide">
+        <img src="images/2.jpg" alt="meme2" class="img">
+      </div>
+      <div class="slide">
+        <img src="images/3.jpg" alt="meme3" class="img">
+      </div>
+      <div class="slide">
+        <img src="images/4.jpg" alt="meme4" class="img">
+      </div>
+      <div class="slide">
+        <img src="images/5.jpg" alt="meme5" class="img">
+      </div>
+      <div class="slide">
+        <img src="images/6.png" alt="meme6" class="img">
+      </div>      
+    </div>
+    <div class="navigation">
+      <label for="r1" class="bar"></label>
+      <label for="r2" class="bar"></label>
+      <label for="r3" class="bar"></label>
+      <label for="r4" class="bar"></label>
+      <label for="r5" class="bar"></label>
+      <label for="r6" class="bar"></label>      
+    </div>
+  </div>
+  
+  
 </body>
 </html>

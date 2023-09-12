@@ -4,12 +4,36 @@ header, main, section, footer, article {
 
 /*abstract*/
 /*base*/
-body {
-  background-color: rgb(246, 255, 0);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: green;
+body {
+  background-color: #25282A;
+  font-family: "Inter", "Verdana", sans-serif;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 12rem;
+}
+
+.slider {
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+}
+
+input[name=meme] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.img {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,27 @@
-body {
-  background-color: rgb(246, 255, 0);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: green;
+body {
+  background-color: $color-background-body;
+  font-family: $font-family;
 }
+
+h2 {
+  color: $color-text;
+  @include font(2rem, 400, 12rem); 
+}
+
+.slider {
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+  //border: 10px solid #000;
+}
+
+input[name="meme"] {
+  position: absolute;
+  visibility: hidden;  
+}
+
