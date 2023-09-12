@@ -1,3 +1,15 @@
-body {
-  background-color: red;
+header, main, section, footer, article {
+  display: block;
 }
+
+/*abstract*/
+/*base*/
+body {
+  background-color: rgb(246, 255, 0);
+}
+
+h1 {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
