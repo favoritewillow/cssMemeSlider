@@ -9,19 +9,6 @@ body {
 }
 
 h2 {
+  @include font(1.5rem, 400, 2rem);
   color: $color-text;
-  @include font(2rem, 400, 12rem); 
 }
-
-.slider {
-  width: 800px;
-  height: 800px;
-  overflow: hidden;
-  //border: 10px solid #000;
-}
-
-input[name="meme"] {
-  position: absolute;
-  visibility: hidden;  
-}
-

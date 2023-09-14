@@ -1,0 +1,25 @@
+.label-container { 
+  //width: 83%; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: end;
+  color: $color-text;  
+  //transform: translateX(-50%);
+}
+
+.bar {
+  width: 15px;
+  height: 15px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #a52121;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  opacity: 1;
+  transform:scale(1.05);
+  background-color: $color-text;
+}
