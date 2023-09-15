@@ -1,0 +1,10 @@
+.img { 
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  margin: 1rem 0 1rem 0;
+  @include media-tablet {   
+    margin-bottom: 4rem;
+  }
+}
+

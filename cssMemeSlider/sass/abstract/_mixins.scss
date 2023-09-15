@@ -1,0 +1,18 @@
+@mixin font ($size, $weight, $height) {
+  font-size: $size;  
+  font-weight: $weight;
+  line-height: $height;  
+}
+
+@mixin media-content {
+  @media (max-width: $content-width) { @content; }
+}
+
+@mixin media-break-point {
+  @media (max-width: $break-point-width) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+

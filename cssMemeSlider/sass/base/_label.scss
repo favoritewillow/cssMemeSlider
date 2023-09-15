@@ -1,0 +1,37 @@
+.label-container {   
+  display: flex;
+  flex-direction: row; 
+  justify-content: end;
+  color: $color-text;    
+  transform: translateY(-595%);
+  @include media-content {
+    transform: translateY(-236%);
+  }
+  @include media-tablet {
+    justify-content: center;
+    transform: translateY(-385%);
+  }
+}
+
+.bar {
+  width: 15px;
+  height: 15px;
+  margin: 6px;
+  cursor: pointer;
+  border: 1px solid $color-label;
+  background-color: $color-label;   
+  border-radius: 50%;
+  transition: all 0.4s ease;    
+}
+
+.bar:hover {    
+  border: 1px solid $color-text;
+  background-color: $color-text; 
+  cursor: pointer; 
+}
+
+.bar:active  {  
+  background-color: transparent;
+}
+
+
