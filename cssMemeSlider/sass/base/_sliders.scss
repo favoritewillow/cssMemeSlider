@@ -5,7 +5,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 0px;
+  margin-right: auto;
+  @include media-tablet {
+    width: 97vw;
+    height: 120vh;
+  }
 }
 
 .slides {
@@ -18,7 +22,7 @@
   width: 100%;
   height: 100%;  
   overflow: hidden;
-  margin-bottom: 2rem;   
+  margin-bottom: 2rem;  
 }
 
 .slide {
@@ -33,8 +37,7 @@
 #r2:checked ~ .s2,
 #r3:checked ~ .s3,
 #r4:checked ~ .s4,
-#r5:checked ~ .s5,
-#r6:checked ~ .s6 {
+#r5:checked ~ .s5 {
   opacity: 1;
   transform: scale(1); 
 }
@@ -44,27 +47,18 @@
 #r2:checked ~ .s3,
 #r2:checked ~ .s4,
 #r2:checked ~ .s5,
-#r2:checked ~ .s6,
 #r3:checked ~ .s1,
 #r3:checked ~ .s2,
 #r3:checked ~ .s4,
 #r3:checked ~ .s5,
-#r3:checked ~ .s6,
 #r4:checked ~ .s1,
 #r4:checked ~ .s2,
 #r4:checked ~ .s3,
 #r4:checked ~ .s5,
-#r4:checked ~ .s6,
 #r5:checked ~ .s1,
 #r5:checked ~ .s2,
 #r5:checked ~ .s3,
-#r5:checked ~ .s4,
-#r5:checked ~ .s6,
-#r6:checked ~ .s1,
-#r6:checked ~ .s2,
-#r6:checked ~ .s3,
-#r6:checked ~ .s4,
-#r6:checked ~ .s5 {
+#r5:checked ~ .s4 {
   opacity: 0;
   transform: scale(0.8); 
 }
@@ -82,9 +76,6 @@
 }
 
 #r5:checked ~ .s5 {
-  transform: translateY(-399.5%);
+  transform: translateY(-399.5%);  
 }
 
-#r6:checked ~ .s6 {
-  transform: translateY(-470%);  
-}

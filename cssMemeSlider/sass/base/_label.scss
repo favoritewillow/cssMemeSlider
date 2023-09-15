@@ -1,10 +1,16 @@
-.label-container { 
-  //width: 83%; 
+.label-container {   
   display: flex;
   flex-direction: row; 
   justify-content: end;
-  color: $color-text;  
-  //transform: translateX(-50%);
+  color: $color-text;    
+  transform: translateY(-595%);
+  @include media-content {
+    transform: translateY(-236%);
+  }
+  @include media-tablet {
+    justify-content: center;
+    transform: translateY(-385%);
+  }
 }
 
 .bar {
@@ -12,14 +18,20 @@
   height: 15px;
   margin: 6px;
   cursor: pointer;
-  background-color: #a52121;
-  opacity: 0.5;
-  border-radius: 10px;
-  transition: all 0.4s ease;
+  border: 1px solid $color-label;
+  background-color: $color-label;   
+  border-radius: 50%;
+  transition: all 0.4s ease;    
 }
 
-.bar:hover {
-  opacity: 1;
-  transform:scale(1.05);
-  background-color: $color-text;
+.bar:hover {    
+  border: 1px solid $color-text;
+  background-color: $color-text; 
+  cursor: pointer; 
 }
+
+.bar:active  {  
+  background-color: transparent;
+}
+
+

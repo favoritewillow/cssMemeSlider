@@ -10,5 +10,10 @@ body {
 
 h2 {
   @include font(1.5rem, 400, 2rem);
-  color: $color-text;
+  color: $color-text;  
+  cursor: pointer;  
+  @include media-tablet {
+    text-align: center;
+  }
 }
+
